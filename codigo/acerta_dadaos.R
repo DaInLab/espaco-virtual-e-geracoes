@@ -1,4 +1,7 @@
-setwd("~/Downloads/Tese Priscilla/r-codes")
+# setwd("~/Downloads/Tese Priscilla/r-codes") # versão inicial em 30/04/2022.
+# versão atual em projeto intitulado "espaco-virtual-e-geracoes" no GitHub
+setwd("/Users/jpalbino/Library/Mobile Documents/com~apple~CloudDocs/GitHub/espaco-virtual-e-geracoes")
+
 library(readxl)
 dbf <- read_excel("dados/dados brutos formatados.xlsx")
 
@@ -96,7 +99,7 @@ for (i in 1:nrow(df_alex)) {
   df_alex$conta_D[i] <- conta_D
 
 # Definido qual Tipo de Uso de maior ocorrência:
-  if((df_alex$conta_A[i] == 0) && (df_alex$conta_B[i] == 0) && (df_alex$conta_C[i] == 0) && (df_alex$conta_C[i] == 0))
+  if((df_alex$conta_A[i] == 0) && (df_alex$conta_B[i] == 0) && (df_alex$conta_C[i] == 0) && (df_alex$conta_D[i] == 0))
     qual_maior_contagem = 0
   else
     qual_maior_contagem <- which.max(c(df_alex$conta_A[i], df_alex$conta_B[i], df_alex$conta_C[i], df_alex$conta_D[i]))
@@ -119,9 +122,9 @@ for (i in 1:nrow(df_alex)) {
     outra = c(46, 47, 48, 49)
     # procurando a segunda ocorrência    
     for (k in (qual_maior_contagem + 1):4){
-      if (df_alex[i, k + 46] == df_alex[i, outra[qual_maior_contagem]]) 
+      if (df_alex[i, outra[k]] == df_alex[i, outra[qual_maior_contagem]]) 
         df_alex[i, 50] = switch(k, "", paste(df_alex[i, 50], "e Estilo de Uso B - Busca e Pesquisa no Espaço Virtual"),
-                                       paste(df_alex[i, 50], "e Estilo de Uso B - Busca e Pesquisa no Espaço Virtual"),
+                                       paste(df_alex[i, 50], "e Estilo de Uso C - Estruturação e Planejamento no Espaço Virtual"),
                                        paste(df_alex[i, 50], "e Estilo de Uso D - Ação Concreta e Produção no Espaço Virtual"))
     }
   }
@@ -175,35 +178,44 @@ for (i in 1:nrow(dfesp)) {
   dfesp$conta_D[i] <- conta_D
   
 # Definido qual Tipo de Uso de maior ocorrência:
-  qual_maior_contagem <- which.max(c(dfesp$conta_A[i], dfesp$conta_B[i], dfesp$conta_C[i], dfesp$conta_D[i]))
-  if (qual_maior_contagem == 1) dfesp$estilo_uso[i] = "Estilo de Uso A - Uso Participativo no Espaço Virtual"
-  if (qual_maior_contagem == 2) dfesp$estilo_uso[i] = "Estilo de Uso B - Busca e Pesquisa no Espaço Virtual"
-  if (qual_maior_contagem == 3) dfesp$estilo_uso[i] = "Estilo de Uso C - Estruturação e Planejamento no Espaço Virtual"
-  if (qual_maior_contagem == 4) dfesp$estilo_uso[i] = "Estilo de Uso D - Ação Concreta e Produção no Espaço Virtual"
-  if (qual_maior_contagem > 4 | qual_maior_contagem < 1) dfesp$estilo_uso[i] = "Não definido!"
   
+  if((dfesp$conta_A[i] == 0) && (dfesp$conta_B[i] == 0) && (dfesp$conta_C[i] == 0) && (df_alex$conta_D[i] == 0))
+    qual_maior_contagem = 0
+  else
+    qual_maior_contagem <- which.max(c(dfesp$conta_A[i], dfesp$conta_B[i], dfesp$conta_C[i], dfesp$conta_D[i]))
+  
+  if(qual_maior_contagem == 0) 
+    dfesp$estilo_uso[i] = "Não definido !" 
+  else 
+    dfesp$estilo_uso[i] = switch(qual_maior_contagem, 
+                                   "Estilo de Uso A - Uso Participativo no Espaço Virtual", 
+                                   "Estilo de Uso B - Busca e Pesquisa no Espaço Virtual", 
+                                   "Estilo de Uso C - Estruturação e Planejamento no Espaço Virtual", 
+                                   "Estilo de Uso D - Ação Concreta e Produção no Espaço Virtual")
+
   conta_A = conta_B = conta_C = conta_D = 0
   
 # Mais alguma outra ocorrência igual à maior ?
 
-  if (qual_maior_contagem < 4) {
-# Acertando os indices
+  if ((qual_maior_contagem > 0) && (qual_maior_contagem < 4)) {
+    # Acertando os indices
     outra = c(46, 47, 48, 49)
-# procurando a segunda ocorrência    
+    # procurando a segunda ocorrência    
     for (k in (qual_maior_contagem + 1):4){
-      if (dfesp[i, k + 46] == dfesp[i, outra[qual_maior_contagem]]) {
-        if (k == 2) dfesp[i, 50] = paste(dfesp[i, 50], "e Estilo de Uso B - Busca e Pesquisa no Espaço Virtual")
-        if (k == 3) dfesp[i, 50] = paste(dfesp[i, 50], "e Estilo de Uso C - Estruturação e Planejamento no Espaço Virtual") 
-        if (k == 4) dfesp[i, 50] = paste(dfesp[i, 50], "e Estilo de Uso D - Ação Concreta e Produção no Espaço Virtual") 
-         }
+      if (dfesp[i, outra[k]] == dfesp[i, outra[qual_maior_contagem]]) 
+        dfesp[i, 50] = switch(k, "", paste(dfesp[i, 50], "e Estilo de Uso B - Busca e Pesquisa no Espaço Virtual"),
+                                paste(dfesp[i, 50], "e Estilo de Uso C - Estruturação e Planejamento no Espaço Virtual"),
+                                paste(dfesp[i, 50], "e Estilo de Uso D - Ação Concreta e Produção no Espaço Virtual"))
     }
   }
   
+  qual_maior_contagem = 0
 }
+
 # Gravando nova planilha com os resultados
 write_xlsx(
   list("espanha" = dfesp),
-  path = "dados/dados_brutos_transformados_espanha.xlsx",
+  path = "dados/dados_transformados_espanha.xlsx",
   col_names = TRUE,
   format_headers = TRUE,
   use_zip64 = FALSE
