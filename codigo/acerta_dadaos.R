@@ -220,3 +220,35 @@ write_xlsx(
   format_headers = TRUE,
   use_zip64 = FALSE
 )
+
+# acertando faixas etárias diferenciadas!
+library(readxl)
+df_idade <- read_excel("dados/dados_brutos_transformados_Original.xlsx", sheet = "trabalho")
+View(df_idade)   
+
+summary(df_idade$idade)
+#Length     Class      Mode 
+#   179 character character
+
+table(df_idade$idade)
+# 18 a 24 anos     25 a 34 anos     35 a 44 anos     45 a 54 anos     55 a 64 anos de 60 a 70 anos. 
+#           22               61               55               33                7                1
+
+plot(table(df_idade$idade))
+
+barplot(table(df_idade$idade))
+
+# criando nova variariavel
+idade_nova = ""
+# Incluindo variáveis no dataframe para receber as somatórias dos Estilos de Uso
+df_idade <- cbind(df_idade, idade_nova)
+
+# transformando (por aproximação/média)
+for (i in 1:nrow(df_idade)) {
+  if (df_idade$idade[i] == "18 a 24 anos") df_idade$idade_nova[i] = "de 17 a 20 anos."
+  if (df_idade$idade[i] == "25 a 34 anos") df_idade$idade_nova[i] = "de 20 a 30 anos."
+  if (df_idade$idade[i] == "35 a 44 anos") df_idade$idade_nova[i] = "de 30 a 40 anos."
+  if (df_idade$idade[i] == "45 a 54 anos") df_idade$idade_nova[i] = "de 40 a 50 anos."
+  if (df_idade$idade[i] == "55 a 64 anos") df_idade$idade_nova[i] = "de 50 a 60 anos."
+}
+
