@@ -1,0 +1,18 @@
+
+de 11 a 14 anos.
+de 14 a 17 anos.
+de 17 a 20 anos.
+de 20 a 30 anos.
+de 30 a 40 anos.
+de 40 a 50 anos.
+de 50 a 60 anos.
+de 60 a 70 anos.
+acima de 70 anos.
+
+
+18 a 24 anos
+25 a 34 anos
+35 a 44 anos
+45 a 54 anos
+55 a 64 anos
+65 anos ou mais

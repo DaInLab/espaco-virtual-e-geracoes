@@ -252,3 +252,11 @@ for (i in 1:nrow(df_idade)) {
   if (df_idade$idade[i] == "55 a 64 anos") df_idade$idade_nova[i] = "de 50 a 60 anos."
 }
 
+# Gravando nova planilha com os resultados
+write_xlsx(
+  list("faixa_etaria" = df_idade),
+  path = "dados/dados_transformados_oba.xlsx",
+  col_names = TRUE,
+  format_headers = TRUE,
+  use_zip64 = FALSE
+)
