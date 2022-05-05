@@ -35,4 +35,8 @@ if (qual_maior_contagem < 4) {
   }
 }
 
-}
+library(readxl)
+df_seniors <- read_excel("dados/seniors_2020.xlsx", 
+                           +     sheet = "uned")
+View(df_seniors) 
+
