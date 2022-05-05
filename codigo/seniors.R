@@ -51,6 +51,23 @@ for (i in 40:61) {
 # Verificando: as linhas/casos 27 64 44 58 63 ficarão com NA
 
 # acertando as rspostas, de P1 a P40
+
 library(readxl)
 tabla_6 <- read_excel("dados/Estudio Del Uso Del Virtual de Los Seniors - extract p 151-152.xlsx", sheet = "tabla6")
 View(tabla_6)   
+
+tabla_6
+# A tibble: 40 × 2
+I#TEMS RESPUESTAS
+#   <chr>      <dbl>
+# 1 P1            58
+# 2 P2            21
+# 3 P3            19
+# 4 P4            24
+# 5 P5            58
+# 6 P6            19
+# 7 P7            19
+# 8 P8            15
+# 9 P9             5
+#10 P10           33
+# … with 30 more rows
