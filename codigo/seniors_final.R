@@ -25,55 +25,6 @@ View(df_seniors)
 # 1. O estado do gerador de números aleatórios é armazenado em .Random.seed (no ambiente global). É um vetor de inteiros cujo comprimento depende do gerador.
 # 2. Se a semente não for especificada, R usa o relógio do sistema para estabelecer uma.
 
-set.seed(1234)
-
-## We could re-generate the dataset by the following R code
-seed <- as.double(1)
-RANDU <- function() {
-  seed <<- ((2^16 + 3) * seed) %% (2^31)
-  seed/(2^31)
-}
-for(i in 1:400) {
-  U <- c(RANDU(), RANDU(), RANDU(), RANDU(), RANDU())
-  print(round(U[1:3], 6))
-}
-#[1] 0.000031 0.000183 0.000824
-#[1] 0.044495 0.155732 0.533939
-#[1] 0.822440 0.873416 0.838541
-#[1] 0.322291 0.648545 0.990648
-#[1] 0.393595 0.826873 0.418881
-
-set.seed(1234)
-
-#Distribuição uniforme
-# Source: https://www.datamentor.io/r-programming/examples/random-number/
-# Descrição: Essas funções fornecem informações sobre a distribuição uniforme 
-# no intervalo de min a max. runif gera desvios aleatórios
-
-round(runif(66, min = 1, max = 66), 0) # define o intervalo entre 1 e 66
-#[1]  8 41 41 42 57 43  2 16 44 34 46 36 19 61 20 55 20 18 13 16 22 21 11  4 15 54 35 60 55
-#[30]  4 31 18 21 34 13 50 14 18 65 53 37 43 21 41 22 34 45 33 17 51  6 21 48 34 11 34 33 50
-#[59] 12 56 57  4 22  2 17 47
-
-# A distribuição normal
-# Descrição : Geração aleatória para a distribuição normal com média igual 
-# à média e desvio padrão igual ao desvio padrão (sd).
-round(rnorm(66, mean=mean(df_seniors$idade), sd=sd(df_seniors$idade)), 0) # fornecendo nossa própria média e desvio padrão
-# [1]  41  12  24  -2  19  47  42  92  27  32  47  29  29  26  22  41  42   7  39  26  28
-#[22]  50  69  98  34  96  24  72 121  54  37  54 101  25  90  89  63  55  43  45  71 109
-#[43]  50  18  36  61  46  50  50  19  50  77  73  69  44  49  23  53  61  99  81  42  64
-#[64]  25  77  80
-
-# Amostras aleatórias e permutações
-# Descrição : "sample" pega uma amostra do tamanho especificado dos elementos de x usando com ou sem reposição.
-set.seed(1234)
-g = sample(1:66)
-g1 = sample(1:66, 66, replace=F)
-sample(1:nrow(df_seniors), nrow(df_seniors), prob= c(rep(0.59, 39), rep(0.33, 22), rep(0.08, 5)), replace=F)
-# [1] 42 10 52 34 18 20  4 66  1 47 56 53 51 38 40  7  8 26  2 61 25 37 11  5  3 63 32 24  9
-#[30] 57 23 43 35 39 30 46 19 13 15 17 29 12 48 31 22  6 45 60 27 55 36 21 44 16 58 64 14 28
-#[59] 33 59 65 49 41 50 62 54
-
 # Atribuindo o gênero no data frame, com a seguinte proporção: 59% (39) masculino, 33% (22) feminino, e 8% (5) ND/NA
 # Etapa 1: gerando randomicamente os gêneros usando a função "sample" (https://r-lang.com/sample-function-in-r-with-example/)
 
@@ -133,6 +84,7 @@ I#TEMS RESPUESTAS
 # 9 P9             5
 #10 P10           33
 # … with 30 more rows
+
 # Calculando a porcentagem das respostas
 ind_prob <- round(tabla_6$RESPUESTAS/66,2)
 ind_resp <- tabla_6$RESPUESTAS
@@ -158,19 +110,19 @@ for (pindex in 1:40) {
 # Inserindo nos casos estabelecidos aleatoriamente as respostas 
 
 # loop de preenchimento dos itens
-coluna = 6                    # coluna inicial no dataframe das respostas
-
-  for (indice in 1:40) {      # 40 indices de resposta
-    for (posicao in 1: 66) {  # posição dos casos
-      if(!is.na(p[indice, posicao])) df_seniors[p[indice, posicao], coluna] = 1  #  preenchendo com número 1 os casos com respostas positivas
+coluna = c(6:45)            # # colunas de 6 a 45 correspondem aos itens de respostas P1 a P40
+for (indice in 1:40) {      # 40 indices de resposta
+  for (posicao in 1: 66) {  # posição dos casos
+    if(!is.na(p[indice, posicao])) {
+      df_seniors[p[indice, posicao], coluna[indice]] = 1  #  preenchendo com número 1 os casos com respostas positivas
     }
-  } 
-  
-  coluna = coluna + 1         #  preenchido os casos com os itens positivos, próxima coluna de item
-  while (coluna < 46) {         # colunas de 6 a 45 correspondem aos itens de respostas
   }
-  
-  
+} 
 
-
-p[1,2]
+# checando os resultados
+coluna = 6
+while (coluna < 46) {
+  print (paste("coluna ", coluna, "total: ", sum(df_seniors[coluna])))
+  coluna + coluna + 1
+}
+sum(df_seniors$P1)
