@@ -122,7 +122,81 @@ for (indice in 1:40) {      # 40 indices de resposta
 # checando os resultados
 coluna = 6
 while (coluna < 46) {
-  print (paste("coluna ", coluna, "total: ", sum(df_seniors[coluna])))
-  coluna + coluna + 1
+  ind_check[I(coluna - 5)] <- sum(df_seniors[, coluna], na.rm = T)
+  print (paste0("coluna ", coluna, " P",I(coluna - 5), " Total: ", ind_check[I(coluna - 5)]))
+  coluna = coluna + 1
 }
-sum(df_seniors$P1)
+tabla_6$check <- ind_check
+
+# Etapa 2: Definir estilos de uso
+
+# Estabelecendo as colunas com as ocorrências dos tipos A, B, C, D
+tipo_A <- c(6, 11, 16, 19, 25, 28, 37, 40, 44, 45)
+tipo_B <- c(7, 10, 15, 20, 24, 29, 36, 38, 39, 41)
+tipo_C <- c(8, 12, 14, 21, 23, 30, 32, 33, 35, 42)
+tipo_D <- c(9, 13, 17, 18, 22, 26, 27, 31, 34, 43)
+
+# Variáveis de controle a serem acrescentadas
+conta_A = conta_B = conta_C = conta_D = 0
+estilo_uso = "" 
+
+# Incluindo variáveis no dataframe para receber as somatórias dos Estilos de Uso
+df_seniors <- cbind(df_seniors, conta_A, conta_B, conta_C, conta_D, estilo_uso)
+
+# Calculando as ocorrências dos tipos A, B, C e D 
+for (i in 1:nrow(df_seniors)) {
+  for (j in 1:length(tipo_A)) {
+    if (!is.na(df_seniors[i, tipo_A[j]])) conta_A = conta_A + 1
+    if (!is.na(df_seniors[i, tipo_B[j]])) conta_B = conta_B + 1
+    if (!is.na(df_seniors[i, tipo_C[j]])) conta_C = conta_C + 1
+    if (!is.na(df_seniors[i, tipo_D[j]])) conta_D = conta_D + 1
+  }
+  # Atualizando o conteúdo das variáveis no arquivo
+  df_seniors$conta_A[i] <- conta_A
+  df_seniors$conta_B[i] <- conta_B
+  df_seniors$conta_C[i] <- conta_C 
+  df_seniors$conta_D[i] <- conta_D
+  
+  # Definido qual Tipo de Uso de maior ocorrência:
+  if((df_seniors$conta_A[i] == 0) && (df_seniors$conta_B[i] == 0) && (df_seniors$conta_C[i] == 0) && (df_seniors$conta_D[i] == 0))
+    qual_maior_contagem = 0
+  else
+    qual_maior_contagem <- which.max(c(df_seniors$conta_A[i], df_seniors$conta_B[i], df_seniors$conta_C[i], df_seniors$conta_D[i]))
+  
+  if(qual_maior_contagem == 0) 
+    df_seniors$estilo_uso[i] = "Não definido !" 
+  else 
+    df_seniors$estilo_uso[i] = switch(qual_maior_contagem, 
+                                   "Estilo de Uso A - Uso Participativo no Espaço Virtual", 
+                                   "Estilo de Uso B - Busca e Pesquisa no Espaço Virtual", 
+                                   "Estilo de Uso C - Estruturação e Planejamento no Espaço Virtual", 
+                                   "Estilo de Uso D - Ação Concreta e Produção no Espaço Virtual")
+  
+  conta_A = conta_B = conta_C = conta_D = 0
+  
+  # Mais alguma outra ocorrência igual à maior ?
+  
+  if ((qual_maior_contagem > 0) && (qual_maior_contagem < 4)) {
+    # Acertando os indices
+    outra = c(46, 47, 48, 49)
+    # procurando a segunda ocorrência    
+    for (k in (qual_maior_contagem + 1):4){
+      if (df_seniors[i, outra[k]] == df_seniors[i, outra[qual_maior_contagem]]) 
+        df_seniors[i, 50] = switch(k, "", paste(df_seniors[i, 50], "e Estilo de Uso B - Busca e Pesquisa no Espaço Virtual"),
+                                paste(df_seniors[i, 50], "e Estilo de Uso C - Estruturação e Planejamento no Espaço Virtual"),
+                                paste(df_seniors[i, 50], "e Estilo de Uso D - Ação Concreta e Produção no Espaço Virtual"))
+    }
+  }
+  
+  qual_maior_contagem = 0
+}
+
+library(writexl)
+# Gravando nova planilha com os resultados
+write_xlsx(
+  list("seniors" = df_seniors),
+  path ="dados/dados_transformados_seniors.xlsx",
+  col_names = TRUE,
+  format_headers = TRUE,
+  use_zip64 = FALSE
+)
