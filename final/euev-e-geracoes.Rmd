@@ -1,0 +1,39 @@
+---
+title: 'Estilos de Uso dos Espaços Virtuais de Aprendizagem: Diferentes Perfis e Formatos nas Gerações Digitais'
+subtitle: "Análise Descritiva do Estilo de Uso do Espaço Virtual e Gerações"
+author:
+- Priscilla Aparecida Sanatana Bittencourt
+- João Pedro Albino
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "/Users/jpalbino/Library/Mobile Documents/com~apple~CloudDocs/GitHub/espaco-virtual-e-geracoes")
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r dados_transformados}
+#data("./dados/dados_minerados.csv")
+euevgera <- read.table("./dados/dados_minerados.csv", header = TRUE, sep = ";", as.is=FALSE)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r genero, echo=FALSE}
+pie(table(euevgera$genero), edges = 200, radius = 0.8, density = NULL, angle = 45, col = NULL, border = NULL,lty = NULL, main = NULL)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
