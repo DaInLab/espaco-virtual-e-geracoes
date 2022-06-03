@@ -144,6 +144,7 @@ axis(1, at=graph.genero, labels=pct_genero, tick=F, las=1, line=-5.0, cex.axis= 
 
 # ------------------------------------------------
 # Gráfico 3: Quantidade de respondentes por Estilo de Uso do espaço virtual
+<<<<<<< HEAD
 library(stringr)
 estilos_de_uso_geral <- euevgera$estilo # selecionando todos os casos da variável estilo de uso
 qtde_estilo_uso <- subset(euevgera, estilo != "", select = estilo) # selecionando apenas os casos com estilo 
@@ -157,6 +158,10 @@ estilo_uso_D <- length(na.omit(str_match(estilos_de_uso_geral, "Estilo de Uso D 
 
 casos_estilo <- table(euevgera$estilo)
 casos_estilo
+=======
+casos_genero <- table(euevgera$genero)
+casos_genero
+>>>>>>> 95110f10e1e352104ebccb03e1ac8f8f80dbefa6
 #     feminino masculino 
 #511       553       347
 
