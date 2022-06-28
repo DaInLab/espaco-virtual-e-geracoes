@@ -1,14 +1,14 @@
 ---
 title: 'Estilos de Uso dos Espaços Virtuais de Aprendizagem: Diferentes Perfis e Formatos nas Gerações Digitais'
-subtitle: "Análise Descritiva do Estilo de Uso do Espaço Virtual e Gerações"
+subtitle: "Análise Exploratória para a Tese EUEV e Gerações"
 author:
-- Priscilla Aparecida Sanatana Bittencourt
+- Priscilla Aparecida Sanatana Bittencourt  
 - João Pedro Albino
-date: "`r Sys.Date()`"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output:
-  pdf_document: default
-  html_document: default
   word_document: default
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -17,11 +17,45 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-## R Markdown
+## 4 RESULTADOS OBBTIDOS E DISCUSSÃO DA INVESTIGAÇÃO
+Neste Capítulo são apresentados os resultados desta investigação, bem como os resultados e a discussão das análises realizadas com dados secundários referentes aos estilos de uso do espaço virtual. Os dados primários foram coletados em trabalhos identificados na pesquisa bibliográfica exploratória e compartilhados mediante solicitação (Anexo 3) e autorizados para utilização neste trabalho.  
+Este Capítulo está subdividido em três partes:
+- primeira parte: apresenta os resultados referente a revisão sistemática da literatura;
+- segunda parte: apresenta os resultados da investigação dos dados;
+- terceira parte: apresenta as análises da investigação dos dados a luz do que foi identificado em relação a revisão sistemática da literatura e a análise da geração digital, de acordo com o objetivo principal da investigação.  
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### 4.1 Primeira parte: resultados da revisão sistemática da literatura
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+A apresentação dos dados coletados nos repositórios durante a leitura inicial foi realizada por meio de tabelas, com a sugestão do tema em questão de cada investigação e a quantidade de estudos com a palavra-chave da mesma temática.  
+Posteriormente, houve uma escolha mais criteriosa e objetiva dos materiais encontrados para cada tema proposto nesta investigação.  
+A exploração e análise dos materiais encontrados se deu por meio de leituras mais aprofundadas, nas quais se possibilitou a discussão e a confrontação do texto teórico descrito no Capítulo 2 - Fundamentação Teórica.  
+Para a construção da base teórica do item 3.1, intitulado como: “A influência da tecnologia na vida das pessoas e na sociedade”, utilizou-se a investigação exploratória e bibliográfica, considerando os seguintes conceitos-chave: *“o impacto das tecnologias na vida das pessoas”* e *“importance of technologies in people's lives”*.  
+Limitou-se o período específico entre 2018 e 2021 e em diferentes idiomas, pois era importante encontrar dados mais recentes publicados sobre este tema, a fim de selecionar o material mais recente.  
+O levantamento bibliográfico foi realizado em bases de dados Brasileiras e Portuguesas:   
+- Google acadêmico de Portugal, acesso pelo link: <https://scholar.google.pt/>;   
+- Biblioteca do Conhecimento Online (b-on), acesso pelo link: <https://www.b-on.pt/>;  
+- Repositório aberto da UAb, acesso pelo link: <https://repositorioaberto.uab.pt/>;  
+-  Repositórios Científicos de Acesso Aberto de Portugal (RCAAP), acesso pelo link: <https://www.rcaap.pt/>;  
+- Repositórios das Unesp, acesso pelo link: <https://repositorio.unesp.br/>;  
+- Google acadêmico do Brasil, acesso pelo link: <https://scholar.google.com.br/>;  
+- Scielo, acesso pelo link: <https://scielo.org/>  
+A partir do levantamento bibliográfico, foram obtidos os resultados demonstrados no Quadro 3:  
+Quadro 3 : Resultado do levantamento Bibliográfico (2018-2021)  
+|Base de dados|Palavra-chave 1|Palavra-chave 2|  
+|:------------|:-------------:|:-------------:|  
+|<https://scholar.google.pt/>|32.800|16.600|  
+|<https://www.b-on.pt/>|6.011|212.992|  
+|<https://repositorioaberto.uab.pt/>|2.312|1.371|  
+|<https://www.rcaap.pt/>|486|97|  
+|<https://repositorio.unesp.br/>|42.993|16.270|  
+|<https://scholar.google.com.br/>|17.300|16.500|  
+|<https://scielo.org/>|4|0|  
+
+
+
+
+
+
 
 ```{r dados_transformados}
 #data("./dados/dados_minerados.csv")
