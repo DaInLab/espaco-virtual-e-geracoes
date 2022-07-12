@@ -1,18 +1,56 @@
-Neste Capítulo são apresentados os resultados desta investigação, bem como os resultados e a discussão das análises realizadas com dados secundários referentes aos estilos de uso do espaço virtual. Os dados primários foram coletados em trabalhos identificados na pesquisa bibliográfica exploratória e compartilhados mediante solicitação (Anexo 3) e autorizados para utilização neste trabalho.  
-Este Capítulo foi dividido em três partes:
-primeira parte: apresenta os resultados referente a revisão sistemática da literatura;
-segunda parte: apresenta os resultados da investigação dos dados;
-terceira parte: apresenta as análises da investigação dos dados a luz do que foi identificado em relação a revisão sistemática da literatura e a análise da geração digital, de acordo com o objetivo principal da investigação.
+Em linhas gerais, os artigos apresentaram estudos exploratórios, dissertando sobre o objetivo de identificar os estilos de uso do espaço virtual predominantemente em grupos de estudantes e professores, e os resultados desses estudos salientam a importância de se identificar tais estilos com o propósito de desenvolver estratégias para o uso colaborativo e criativo dos ambientes online neste grupo de usuários do espaço virtual. 
+Os estudos exploratórios contidos nos artigos também revelaram uma breve reflexão com relação ao ensino presencial e à distância, assinalando que o uso das mídias sociais pode ampliar as oportunidades de aprendizagem individual e colaborativa. 
+As dissertações expuseram, de forma geral, que os estilos de aprendizagem no virtual podem se modificar ou se adaptar de acordo com o contexto ao qual os indivíduos estão inseridos, influenciando no processo de ensino e aprendizagem dos estudantes, além de identificar o estilo de uso do espaço virtual predominante em cada investigação realizada.
+As teses analisadas tratam de estudos realizados com estudantes, nas quais se pode perceber que, de maneira geral, todas observaram o processo de ensino e aprendizagem com o objetivo de entenderem os estudantes em seu contexto. Os resultados das teses analisadas mostraram maneiras de colaborar e incentivar o desenvolvimento de novos modelos de ensinar e aprender.
+O levantamento bibliográfico e exploratório também foi importante no momento para identificar quais investigadores aplicaram e utilizaram a teoria dos “estilos de uso do espaço virtual” em suas investigações.
+Posteriormente ao processo de consulta aos bancos de dados referente a temática dos estilos de uso do espaço virtual, houve a necessidade de atualização das obras consultadas durante a fase inicial da pesquisa, portanto, fez-se necessária nova pesquisa bibliográfica abrangendo o tema.
+Realizou-se nova investigação exploratória e bibliográfica, consultando os seguintes conceitos-chave: “estilos de uso do espaço virtual”; “questionário estilos de uso do espaço virtual” e “uso do espaço virtual”. Ampliou-se o período de abrangência das buscas, compreendendo os anos entre 2018 e 2021 e expandiu-se também o número das bases de dados consultadas, pois pretendia-se visualizar as atualizações destes conceitos neste período.
+A partir desta pesquisa atualizada, obteve-se os resultados, demonstrados no Quadro 7:  
+Quadro 7: Resultado do levantamento Bibliográfico (2018-2021)  
+|Base de dados|Palavra-chave 1[^7]|Palavra-chave 2[^8]||Palavra-chave 3[^9]|  
+|:------------|:-----------------:|:-----------------:|:------------------:|  
+|<https://scholar.google.pt/>|77|18|3|    
+|<https://www.b-on.pt/>|0|0|0|  
+|<https://repositorioaberto.uab.pt/>|15|2|1|  
+|<https://www.rcaap.pt/>|2|1|0|   
+|<https://repositorio.unesp.br/>|41.141|42.024|0|  
+|<https://scholar.google.com.br/>|77|18|3|   
+|<https://scielo.org/>|0|0|0|     
+|Totais|41.582|5.287|42.063|41.418|  
+Fonte: Elaborada pela pesquisadora (2022).  
 
-Para a construção da base teórica do item 2.1, intitulado como: “A influência da tecnologia na vida das pessoas e na sociedade”, utilizou-se a investigação exploratória e bibliográfica, considerando os seguintes conceitos-chave: “o impacto das tecnologias na vida das pessoas” e “importance of technologies in people's lives”.  
+[^7]: Palavra-chave 1 - estilos de uso do espaço virtual    
+[^8]: Palavra-chave 2 - estilos de uso del espacio virtual  
+[^9]: Palavra-chave 3 - questionário estilos de uso do espaço virtual  
 
-O levantamento bibliográfico foi realizado em bases de dados Brasileiras e Portuguesas : 
-Google acadêmico de portugal, acesso pelo link: https://scholar.google.pt/; 
-B-on, acesso pelo link: https://www.b-on.pt/;
-Repositório aberto da UAb, acesso pelo link: https://repositorioaberto.uab.pt/;
-RCAAP (Repositórios Científicos de Acesso Aberto de Portugal), acesso pelo link: https://www.rcaap.pt/;
-Repositórios das Unesp, acesso pelo link: https://repositorio.unesp.br/;
-Google acadêmico do Brasil, acesso pelo link: https://scholar.google.com.br/;
-Scielo, acesso pelo link: https://scielo.org/
+Como pode ser observado no Quadro 7, utilizando-se um período ampliado para as buscas nas bases de dados, a quantidade de documentos recuperados superou, em muito, os observados no Quadro 6, demonstrando que o tema “estilos de uso do espaço virtual” e correlatos encontra-se bastante frequente. 
+Com tais resultados atualizados, observou-se também a necessidade de atualização e ampliação das buscas referentes aos conceitos-chave inerentes à questão de pesquisa desta tese, compreendendo então o conjunto de palavras-chave “espaço virtual” e “gerações digitais”. Para efetivar o levantamento bibliográfico e exploratório inerente ao tema deste trabalho, determinou-se que o período de buscas contivesse os anos entre 2018 (último ano da pesquisa bibliográfica anterior) e 2021 nas mesmas bases de dados já especificadas anteriormente.  
+A partir desta atualização e ampliação na pesquisa original realizada, uma ampla variedade de documentos foi recuperada, cujos resultados condensados estão demonstrados no Quadro 8. Uma visão mais detalhada dos resultados obtidos também pode ser visualizada no Anexo XXX.  
 
-A partir do levantamento bibliográfico, foram obtidos os resultados demonstrados no Quadro 3:
+Quadro 8: Resultado ampliado do levantamento Bibliográfico  
+|Base de dados|Palavra-chave 1[^10]|Palavra-chave 2[^11]|  
+|:------------|:------------------:|:------------------:|  
+|<https://scholar.google.pt/>|18.000|18.600|    
+|<https://www.b-on.pt/>|0|0|0|  
+|<https://repositorioaberto.uab.pt/>|1.407|18.600|  
+|<https://www.rcaap.pt/>|11|3|   
+|<https://repositorio.unesp.br/>|2.119|535|  
+|<https://scholar.google.com.br/>|12.600|129|   
+|<https://scielo.org/>|42|2|     
+|Totais|41.582|5.287|42.063|41.418|  
+Fonte: Elaborada pela pesquisadora (2022).  
+
+[^10]: Palavra-chave 1 - espaço virtual      
+[^11]: Palavra-chave 2 - gerações digitais  
+
+A partir dessa extensa busca exploratória e bibliográfica e, novamente, com o auxílio do roteiro RACI (Tabela ???), efetuou-se uma análise documental para escolha de material relacionado à esta tese, considerando-se temas relacionados aos estilos de uso do espaço virtual e às gerações digitais. Além dos critérios de análise nas dimensões de análise de conteúdo do RACI, a escolha também foi abalizada em juízo crítico baseados em estudos e pesquisas realizados anteriormente pela pesquisadora, notadamente quando do desenvolvimento da dissertação (BITTENCOURT, 2016) e artigos BITTENCOURT e ALBINO, 2017).      
+Em linhas gerais, os artigos apresentaram... dissertando sobre o objetivo de ......   
+Com relação à questão do uso geracional da tecnologia ....  
+O levantamento bibliográfico e exploratório também foi importante para identificar quais documentos recuperados na busca nas bases de dados utilizaram o questionário de estilos de uso em seus trabalhos.  
+
+
+
+
+
+
+  

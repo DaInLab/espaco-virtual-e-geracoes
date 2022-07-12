@@ -4,6 +4,6 @@
 # Alejandro Villegas Barrera          | México    | Herramienta para la creación de un Entorno Personal de Aprendizaje - Barrera, A. V., et. al., reporte, 2017.  
 # Marcos Andrei Ota                   | Brasil    | Adaptatividade em Ambientes Virtuais: uma proposta para personalizar a aprendizagem em cursos híbridos de ensino superior - Ota, M. A., tese, 2018. 
 # Adriana Aparecida de Lima Terçariol | Brasil    | Os Estilos de Uso dos Espaços Virtuais e as Redes Sociais na Pedagogia: Um Estudo Exploratório - Terçariol, A.A.L., e Barros, D, M., 2017.
-# Indefinido 1                        | Brasil    | ???
-# Indefinido 2                        | Portugal  | ???
+# Daniela Melaré Vieira Barros        | Brasil    | ???
+# Daniela Melaré Vieira Barros        | Portugal  | ???
 # Cristina Sánchez Romero             | Espanha   | Estudio de Identificación de Los Estilos Del Uso Del Virtual de Los Seniors: perspectivas iniciales - Romero, C. S., et al., 2020.

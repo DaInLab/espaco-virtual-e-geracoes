@@ -1,0 +1,32 @@
+
+
+
+
+
+1. Importar os dados de alguma fonte (Banco de dados, ou planilha) para o ambiente de ciência de dados (no caso, do RStudio ou Python, se for o caso).
+2. "Arrumar" ou pré-processar (tidy) os dados no formato de dataframe no ambiente de ciência de dados limpando os dados faltantes (missing data), campos digitados errados, etc.
+3. Transformar os dados, de forma que possam ser aplicadas as técnicas estatísticas. Em alguns casos, transformar os campos categóricos alfanuméricos (por exemplo sexo, ou faixa etária) em campos categóricos numéricos (exemplo: sexo feminino = 1, sexo masculino = 2, não respondeu = 3). Nesta fase também são desenvolvidos os códigos (programas) para a elaboração das análises.
+4. Visualização. Nesta etapa são gerados os gráficos e elaborado o relatório da análise.
+5. Modelagem. Elaboração dos modelos com os dados após a análise exploratória dos dados.
+6. Comunicação. Envio ou submissão do relatório final (TCC por exemplo) com as análises realizadas e as conclusões obtidas.
+Este esquema/modelo está explicado no livro R para data science: Importe, arrume, transforme, visualize e modele dados, dos autores Hadley Wickham e  Garrett Grolemund, edição 2019 da Editora  Alta Books, tradução em português. 
+
+De acordo com Hai, Kamber e Pei (2011), mineração de dados (ou em inglês data mining) é o processo de extração e descoberta de padrões em conjuntos de dados (datasets) envolvendo métodos na interseção entre aprendizado de máquina, estatística e sistemas de banco de dados. A mineração, um subcampo interdisciplinar de ciência da computação e estatística, tem como objetivo geral extrair informações de um conjunto de dados e transformar as informações em uma estrutura compreensível para uso posterior. A mineração de dados é a etapa de análise do processo de "descoberta de conhecimento em bancos de dados", ou KDD (knowledge discovery in databases).
+A descoberta de conhecimento em bases de dados tem como objetivo encontrar padrões intrínsecos aos dados nela contidos, apresentando-os de forma a facilitar sua assimilação como conhecimento, definem Silva, Peres e Boscarioli (2016). Ainda segundo esses autores, a mineração de dados é definida em termos do esforço para a descoberta de padrões e, à partir dos padrões descobertos, gerar conhecimento útil para um processo de tomada de decisão.
+Trata-se, portanto, da aplicação de técnicas, implementadas por meio de algoritmos computacionais, capazes de receber, como entrada, um conjunto de dados e devolver, como saída, um padrão de comportamento, o qual pode ser expresso, pr exemplo, uma função de mapeamento, ou a modelagem de um perfil (SILVA, PERES e BOSCARIOLI, 2016).
+Os processos fundamentais da mineração de dados a partir de fontes de dados (bancos de dados, relatórios, logs de acesso, transações, etc.) consistem em: (a) limpeza (remoção de ruídos e redundâncias, remoção de duplicidades etc.); (b) preparação dos dados (preenchimento de informações, deteção de anomalias (outliers), dados faltantes etc.); (c) modelagem dos dados; e (d) implantação da solução. (HAI, KAMBE e PEI, 2011). 
+Trabalhos recentes na área de ciência de dados, tais como Tyagi (2022), Kotu (2019) e Wickham e Grolemund (2017) consideram a mineração de dados como pertencente ao campo da ciência de dados, no qual o processo de mineração compreende as técnicas, ferramentas e métodos relativos ao processo de obter insights valiosos a partir de dados estruturados e não estruturados.
+Para as atividades
+
+
+descrever a análise de dados como o processo de trazer ordem, estrutura e significado para a massa de dados coletados. É descrito como confuso, ambíguo e demorado, mas também como um processo criativo e fascinante. De um modo geral - enquanto isso não proceder de forma linear - é a atividade de dar sentido, interpretar e teorizar os dados que significa uma busca por declarações gerais entre categorias de dados
+
+All these frameworks exhibit common characteristics, and hence, a generic framework closely resembling the CRISP process will be used. As with any process framework, a data science process recommends the execution of a certain set of tasks to achieve optimal output. However, the process of extracting information and knowledge from the data is iterative. The steps within the data science process are not linear and have to undergo many oops, go back and forth between steps, and at times go back to the first step to redefine the data science problem statement.
+The data science apresentado na Figura NNN is a generic set of steps that is problem, algorithm, and, data science tool agnostic. The fundamental objective of any process that involves data science is to address the analysis question.
+
+
+[PALAVRA]. In: LEXICO, Dicionário Online de Português. Porto: 7Graus, 2018. Disponível em: [url da palavra]. Acesso em: 06/07/2022.
+
+
+
+https://www.dcc.fc.up.pt/~ltorgo/SebentaR/HTML/node16.html

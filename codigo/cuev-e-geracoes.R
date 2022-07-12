@@ -32,12 +32,12 @@ nome_variaveis
 # "pesquisador", "data.ano", "pais", "genero", "idade" e "estilo".
 # Fontes dos dados utilizadas:
 # Pesquisadores                       | País      | Trabalho de origem
-# María Carmen López Berlanga         | Espanha   | El estilo de uso del espacio virtual con estudiantes de Educación Secundaria - Berlanga, M. C. L., et. al, artigo, 2018.
-# Alejandro Villegas Barrera          | México    | Herramienta para la creación de un Entorno Personal de Aprendizaje - Barrera, A. V., et. al., reporte, 2017.  
+# María Carmen López Berlanga         | Espanha   | El estilo de uso del espacio virtual con estudiantes de Educación Secundaria - Berlanga, M. C. L., et. al, artigo, 2019.
+# Alejandro Villegas Barrera          | México    | Herramienta para la creación de un Entorno Personal de Aprendizaje - Barrera, A. V., reporte, 2017.  
 # Marcos Andrei Ota                   | Brasil    | Adaptatividade em Ambientes Virtuais: uma proposta para personalizar a aprendizagem em cursos híbridos de ensino superior - Ota, M. A., tese, 2018. 
 # Adriana Aparecida de Lima Terçariol | Brasil    | Os Estilos de Uso dos Espaços Virtuais e as Redes Sociais na Pedagogia: Um Estudo Exploratório - Terçariol, A.A.L., e Barros, D, M., 2017.
-# Indefinido 1                        | Brasil    | ???
-# Indefinido 2                        | Portugal  | ???
+# Daniela Melaré Vieira Barros        | Brasil    | ???
+# Daniela Melaré Vieira Barros        | Portugal  | ???
 # Cristina Sánchez Romero             | Espanha   | Estudio de Identificación de Los Estilos Del Uso Del Virtual de Los Seniors: perspectivas iniciales - Romero, C. S., et al., 2020.
 
 # ------------------------------------------------
