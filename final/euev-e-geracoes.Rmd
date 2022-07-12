@@ -6,10 +6,10 @@ author:
 - João Pedro Albino
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output:
-  pdf_document: 
-    latex_engine: xelatex
   html_document: default
   word_document: default
+  pdf_document: 
+    latex_engine: xelatex
 editor_options: 
   markdown: 
     wrap: sentence
@@ -20,7 +20,26 @@ options(tinytex.verbose = TRUE)
 ```
 
 ```{r setup, include=FALSE}
-knitr::opts_knit$set(root.dir = "/Users/jpalbino/Library/Mobile Documents/com~apple~CloudDocs/GitHub/espaco-virtual-e-geracoes")
+# Obter em qual SO o RStudio está "rodando"
+get_os <- function(){
+  sysinf <- Sys.info()
+  if (!is.null(sysinf)){
+    os <- sysinf['sysname']
+    if (os == 'Darwin')
+      os <- "osx"
+  } else { ## mystery machine
+    os <- .Platform$OS.type
+    if (grepl("^darwin", R.version$os))
+      os <- "osx"
+    if (grepl("linux-gnu", R.version$os))
+      os <- "linux"
+  }
+  tolower(os)
+}
+if (get_os() == "windows")
+  knitr::opts_knit$set(root.dir = "D:/Github/espaco-virtual-e-geracoes") else
+  knitr::opts_knit$set(root.dir = "/Users/jpalbino/Library/Mobile Documents/com~apple~CloudDocs/GitHub/espaco-virtual-e-geracoes")
+
 knitr::opts_chunk$set(echo = TRUE)
 
 ```
@@ -221,11 +240,17 @@ O levantamento bibliográfico e exploratório também foi importante para identi
 
 ### 4.2 Segunda parte: procedimentos de coleta e análise exploratória de dados
 
-Neste tópico serão demonstrados os procedimentos metodológicos para a coleta, análise e interpretação dos dados que foram compartilhados à esta tese por pesquisadores identificados, no processo de revisão sistemática da literatura, relativos ao uso do Questionário Estilo de Uso do Espaço Virtual -- CEUEVE.\
-#### 4.2.1 Obtenção dos dados não submetidos a processamento\
+Neste tópico serão demonstrados os procedimentos metodológicos para a coleta, análise e interpretação dos dados que foram compartilhados à esta tese por pesquisadores identificados, no processo de revisão sistemática da literatura, relativos ao uso do Questionário Estilo de Uso do Espaço Virtual -- CEUEVE.  
+
+#### 4.2.1 Obtenção dos dados não submetidos a processamento
+
 Os dados secundários utilizados nesta tese foram compartilhados por pesquisadores identificados no processo de revisão sistemática da literatura, relativos ao uso do Questionário Estilo de Uso do Espaço Virtual -- CEUEVE.
 Tal instrumento de pesquisa, desenvolvido em Barros (2018) e especificado em Barros (2013), versa sobre identificar como as pessoas utilizam e aprendem no espaço virtual e quais estilos de aprendizagem podem ser considerados neste novo espaço.\
-Como citado anteriormente, Barros (2009) categorizou quatro tendências de uso dos estilos do espaço virtual, já discutidas na Fundamentação Teórica e que nesta etapa da tese serão utilizados com a terminologia: - **Estilo de Uso A**: Uso Participativo no Espaço Virtual - **Estilo de Uso B**: Busca e Pesquisa no Espaço Virtual - **Estilo de Uso C**: Estruturação e Planejamento no Espaço Virtual - **Estilo de Uso D**: Ação Concreta e Produção no Espaço Virtual\
+Como citado anteriormente, Barros (2009) categorizou quatro tendências de uso dos estilos do espaço virtual, já discutidas na Fundamentação Teórica e que nesta etapa da tese serão utilizados com a terminologia:\
+- **Estilo de Uso A**: Uso Participativo no Espaço Virtual\
+- **Estilo de Uso B**: Busca e Pesquisa no Espaço Virtual\
+- **Estilo de Uso C**: Estruturação e Planejamento no Espaço Virtual\
+- **Estilo de Uso D**: Ação Concreta e Produção no Espaço Virtual\
 Em síntese, em Barros (2013), o estilo de uso do espaço virtual é definido como situações de utilização dos aplicativos e ferramentas determinam as características de um usuário na busca, no planejamento e na utilização de informação no digital.\
 Outro construto importante também tratado na Fundamentação Teórica em como as tecnologias digitais evoluem a cada dia e as pessoas, independentemente da nomenclatura utilizada para nomeá-las (nativos, imigrantes, habitantes, visitantes ou transeuntes), suas usuárias, estão adotando, cada grupo de indivíduos com suas características, mostrou-se interessante pesquisar as propensões de uso dos estilos do espaço virtual e as formas de utilização da tecnologia pelos conjunto de pessoas (gerações) e, assim, possivelmente compreender de que forma o uso dos espaços virtuais por pessoas em diferentes faixas etárias, impacta o seu cotidiano.\
 De forma concisa, a análise e interpretação dos dados dos questionários CEUEVE e as características geracionais relativas distinguiriam uma representação detalhada dos diferentes perfis e usos do digital nas gerações de acordo com os apontamentos identificados, convergindo diretamente à resposta da pergunta de pesquisa desta tese.\
@@ -270,8 +295,13 @@ Para a análise e interpretação dos dados coletados pelos pesquisadores será 
 [^12]: Conforme definição em OxFordLanguages, 2022, Oxford University Press.
     Disponível em: <https://dictionary.cambridge.org/dictionary/english-portuguese/insight>.
     Acesso em: 01 jun. 2022.
+    
 
-![Figura NNN. Estrutura para análise e interpretação de dados.](/Users/jpalbino/Library/Mobile%20Documents/com~apple~CloudDocs/GitHub/espaco-virtual-e-geracoes/final/estrutura_aed.png)
+<!--#if (get_os() == "windows") -->
+![Figura NNN. Estrutura para análise e interpretação de dados.](D:/Github/espaco-virtual-e-geracoes/final/estrutura_aed.png)
+
+<!--#if (get_os() == "osx")
+![Figura NNN. Estrutura para análise e interpretação de dados.](/Users/jpalbino/Library/Mobile%20Documents/com~apple~CloudDocs/GitHub/espaco-virtual-e-geracoes/final/estrutura_aed.png)}-->
 
 Fonte: Baseado em Wickham e Grolemund, 2017.
 
