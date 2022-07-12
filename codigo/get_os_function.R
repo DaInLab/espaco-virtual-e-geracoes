@@ -13,5 +13,3 @@ get_os <- function(){
   }
   tolower(os)
 }
- get_os()
- 
