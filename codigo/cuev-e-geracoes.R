@@ -60,8 +60,9 @@ pct_pais
 #[1] "70 %"  "19 %"  "10 %"  "2 %"   "100 %"
 
 # Utilizando barplot
-graph.pais <- barplot(as.vector(soma_pais_grafico), 
-                      xlab = "Origem dos dados", 
+graph.pais <- barplot(as.vector(soma_pais_grafico),
+                      main = "Gráfico 1: Quantidade casos por país",
+                      xlab = "País de origem dos dados", 
                       ylab = "CEUEV Questionários Aplicados",
                       col = "orange",
                       ylim = c(0,max(soma_pais_grafico) + 139),
