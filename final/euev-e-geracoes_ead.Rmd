@@ -6,10 +6,10 @@ author:
 - João Pedro Albino
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output:
+  html_document: default
   word_document: default
   pdf_document: 
     latex_engine: xelatex
-  html_document: default
 editor_options: 
   markdown: 
     wrap: sentence
@@ -52,9 +52,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ## 3 PROCEDIMENTOS METODOLÓGICOS
 
 De maneira mais sucinta, a análise dos materiais realizou-se conforme os tópicos:  
-1º Aplicação do RACI nos materiais levantados na revisão sistemática da literatura;  
-2º Baseado nas respostas positivas e que foram obtidas do resultado da aplicação do roteiro RACI para com os materiais que foram levantados na revisão sistemática, mais especificamente na coluna 5 (a observação e descrição realizada dos aspectos observados nas investigações)  
-3º Neste tópico serão demonstrados os procedimentos metodológicos para a coleta, análise e interpretação dos dados relativos à representação detalhada dos diferentes perfis e usos do digital nas gerações de acordo com os apontamentos identificados na revisão sistemática da literatura relativas ao questionário sobre os estilos de uso do espaço virtual.
+1º - Aplicação do RACI nos materiais levantados na revisão sistemática da literatura;  
+2º - Baseado nas respostas positivas e que foram obtidas do resultado da aplicação do roteiro RACI para com os materiais que foram levantados na revisão sistemática, mais especificamente na coluna 5 (a observação e descrição realizada dos aspectos observados nas investigações)  
+3º - Neste tópico serão demonstrados os procedimentos metodológicos para a coleta, análise e interpretação dos dados relativos à representação detalhada dos diferentes perfis e usos do digital nas gerações de acordo com os apontamentos identificados na revisão sistemática da literatura relativas ao questionário sobre os estilos de uso do espaço virtual.
 
 ## 4 RESULTADOS OBTIDOS E DISCUSSÃO DA INVESTIGAÇÃO
 
@@ -247,7 +247,7 @@ O levantamento bibliográfico e exploratório também foi importante para identi
 
 Neste tópico serão demonstrados os procedimentos metodológicos para a coleta, análise e interpretação dos dados que foram compartilhados à esta tese por pesquisadores identificados, no processo de revisão sistemática da literatura, relativos ao uso do Questionário Estilo de Uso do Espaço Virtual -- CEUEVE.  
 
-#### 4.2.1 Obtenção dos dados não submetidos a processamento
+#### 4.2.1 Obtenção dos dados não submetidos a processamento  
 
 Os dados secundários utilizados nesta tese foram compartilhados por pesquisadores identificados no processo de revisão sistemática da literatura, relativos ao uso do Questionário Estilo de Uso do Espaço Virtual -- CEUEVE.
 Tal instrumento de pesquisa, desenvolvido em Barros (2018) e especificado em Barros (2013), versa sobre identificar como as pessoas utilizam e aprendem no espaço virtual e quais estilos de aprendizagem podem ser considerados neste novo espaço.  
@@ -279,7 +279,7 @@ Quadro nnn: Fontes de dados utilizadas
 
 Fonte: Elaborado pela pesquisadora (2022).
 
-#### 4.2.2 Processo de Mineração e análise dos dados
+#### 4.2.2 Processo de Mineração e análise dos dados  
 
 De acordo com Hai, Kamber e Pei (2011), mineração de dados (ou em inglês data mining) é o processo de extração e descoberta de padrões em conjuntos de dados (datasets) envolvendo métodos na interseção entre aprendizado de máquina, estatística e sistemas de banco de dados.
 A mineração, um subcampo interdisciplinar de ciência da computação e estatística, tem como objetivo geral extrair informações de um conjunto de dados e transformar as informações em uma estrutura compreensível para uso posterior.
@@ -287,19 +287,20 @@ A mineração de dados é a etapa de análise do processo de "descoberta de conh
 A descoberta de conhecimento em bases de dados tem como objetivo encontrar padrões intrínsecos aos dados nela contidos, apresentando-os de forma a facilitar sua assimilação como conhecimento, definem Silva, Peres e Boscarioli (2016).
 Ainda segundo esses autores, a mineração de dados é definida em termos do esforço para a descoberta de padrões e, a partir dos padrões descobertos, gerar conhecimento útil para um processo de tomada de decisão.
 Trata-se, portanto, da aplicação de técnicas, implementadas por meio de algoritmos computacionais, capazes de receber, como entrada, um conjunto de dados e devolver, como saída, um padrão de comportamento, o qual pode ser expresso, pr exemplo, uma função de mapeamento, ou a modelagem de um perfil (SILVA, PERES e BOSCARIOLI, 2016).  
-Os processos fundamentais da mineração de dados a partir de fontes de dados (bancos de dados, relatórios, logs de acesso, transações etc.) consistem em: (a) limpeza (remoção de ruídos e redundâncias, remoção de duplicidades etc.); (b) preparação dos dados (preenchimento de informações, detecção de anomalias (outliers), dados faltantes etc.); (c) modelagem dos dados; e (d) implantação da solução.
-(HAI, KAMBE e PEI, 2011).  
-Trabalhos recentes na área de ciência de dados, tais como Tyagi (2022), Kotu (2019) e Wickham e Grolemund (2017) consideram a prospecção de dados como pertencente ao campo da ciência de dados, no qual o processo de mineração abrange as técnicas, ferramentas e métodos relativos ao processo de obter insights valiosos a partir de dados estruturados e não estruturados.
-Muitas vezes, os termos mais genéricos e utilizados em larga escala, analítica - do termo em inglês analytics - e análise de dados -- ou, quando se refere a métodos concretos, inteligência artificial e aprendizado de máquina, são mais apropriados, afirma Tyagi (2022).  
-Por tanto, nesta tese, os termos mineração e análise de dados serão utilizados de forma alternada e com o mesmo objetivo: processo de obtenção de valiosos insights a partir da análise e interpretação dos dados.
-Um insight é um acontecimento cognitivo que pode ser associado a capacidade de ter uma compreensão clara, profunda e às vezes repentina de um problema ou situação complicada podendo ser sinônimo de compreensão, conhecimento, intuição.
-Insight é a perspicácia ou a capacidade de apreender alguma coisa e acontece quando uma solução surge de forma repentina[^12].
-  
-Para a análise e interpretação dos dados coletados pelos pesquisadores será utilizada neste tópico da tese o framework - termo inglês que, em tradução direta, significa estrutura ou arcabouço, em português -- definida em Wickham e Grolemund (2017) e representada na Figura NNN.
+Os processos fundamentais da mineração de dados a partir de fontes de dados (bancos de dados, relatórios, logs de acesso, transações etc.) consistem em: (a) limpeza (remoção de ruídos e redundâncias, remoção de duplicidades etc.); (b) preparação dos dados (preenchimento de informações, detecção de anomalias (outliers), dados faltantes etc.); (c) modelagem dos dados; e (d) implantação da solução. (HAI, KAMBE e PEI, 2011).  
 
-[^12]: Conforme definição em OxFordLanguages, 2022, Oxford University Press.
-    Disponível em: <https://dictionary.cambridge.org/dictionary/english-portuguese/insight>.
-    Acesso em: 01 jun. 2022.
+#### 4.2.3 Análise exploratória dos dados  
+
+Trabalhos recentes na área de ciência de dados, tais como Tyagi (2022), Kotu (2019) e Wickham e Grolemund (2017) consideram a prospecção de dados como pertencente ao campo da ciência de dados, no qual o processo de mineração abrange as técnicas, ferramentas e métodos relativos ao processo de obter insights valiosos a partir de dados estruturados e não estruturados.
+Muitas vezes, os termos mais genéricos e utilizados em larga escala, *analítica* - do termo em inglês *analytics* - e *análise de dados* - ou, quando se refere a métodos concretos, *inteligência artificial* e *aprendizado de máquina*, são mais apropriados, afirma Tyagi (2022). 
+Por tanto, nesta tese, os termos mineração e análise de dados serão utilizados de forma alternada e com o mesmo objetivo: processo de obtenção de valiosos **insights** a partir da análise e interpretação dos dados.
+Um *insight* é um acontecimento cognitivo que pode ser associado a capacidade de ter uma compreensão clara, profunda e às vezes repentina de um problema ou situação complicada podendo ser sinônimo de compreensão, conhecimento, intuição[^12]. *Insight* também pode ser definido como a perspicácia ou a capacidade de apreender alguma coisa e acontece quando uma solução surge de forma repentina[^13].
+  
+Para a análise e interpretação dos dados coletados pelos pesquisadores será utilizada neste tópico da tese o *framework* - termo inglês que, em tradução direta, significa estrutura ou arcabouço, em português - definido em Wickham e Grolemund (2017) e representado na Figura NNN.
+
+[^12]: Conforme definição em Significados. Porto: 7Graus, 2020. Disponível em: <https://www.significados.com.br/insight/#:~:text=O%20que%20significa%20Insight%3A&text=Um%20insight%20é%20um%20acontencimento,solução%20surge%20de%20forma%20repentina>. Acesso em: 26 jun. 2022.  
+
+[^13]: Conforme definição em OxFordLanguages, 2022, Oxford University Press. Disponível em: <https://dictionary.cambridge.org/dictionary/english-portuguese/insight>. Acesso em: 01 jun. 2022.  
 
 <!--#if (get_os() == "windows")
 ![Figura NNN. Estrutura para análise e interpretação de dados.](D:/Github/espaco-virtual-e-geracoes/final/estrutura_aed.png) -->
@@ -309,45 +310,68 @@ Para a análise e interpretação dos dados coletados pelos pesquisadores será 
 
 Fonte: Baseado em Wickham e Grolemund, 2017.
 
-De acordo com Kotu (2019), a grande maioria dos frameworks em ciência de dados apresentam como características um arcabouço genérico muito semelhante ao processo CRISP-DM, abreviação de CRoss Industry Standard Process for Data Mining, que pode ser traduzido como Processo Padrão Inter-Indústrias para Mineração de Dados.
+De acordo com Kotu (2019), a grande maioria dos frameworks em ciência de dados apresentam como características um arcabouço genérico muito semelhante ao processo *CRISP-DM*, abreviação de *CRoss Industry Standard Process for Data Mining*, que pode ser traduzido como Processo Padrão Inter-Indústrias para Mineração de Dados.  
 Ainda de acordo com o autor, o CRISP-DM é um framework de processo de mineração de dados que descreve abordagens comumente usadas por especialistas em mineração de dados para resolver um problema específico.  
-Como em qualquer estrutura de processo, um processo de ciência de dados recomenda a execução de um determinado conjunto de tarefas para obter a saída ideal.
-O processo de extração de informações e conhecimento dos dados é iterativo, ou seja, é referente a um processo que é feito de novo, repetido ou reiterado, que é realizado inúmeras vezes[^13].
-As etapas dentro do processo de ciência de dados não são lineares e precisam passar por muitos loops[^14], ir e voltar entre as etapas e, às vezes, voltar à primeira etapa para redefinir a declaração do problema da ciência de dados.  
+Como em qualquer estrutura de processo, um processo de ciência de dados recomenda a execução de um determinado conjunto de tarefas para obter a saída ideal.  
+O processo de extração de informações e conhecimento dos dados é iterativo, ou seja, é referente a um processo que é feito de novo, repetido ou reiterado, que é realizado inúmeras vezes[^14].
+As etapas dentro do processo de ciência de dados não são lineares e precisam passar por muitos loops[^15], ir e voltar entre as etapas e, às vezes, voltar à primeira etapa para redefinir a declaração do problema da ciência de dados.  
 O arcabouço de ciência de dados apresentada na Figura NNN é um conjunto genérico de etapas que é agnóstico de problema, algoritmo e ferramenta para análise de dados. O objetivo fundamental de qualquer processo que envolva a apreciação e a interpretação de dados é abordar a questão da análise, afirma Kotu (2019).  
-Em resumo, as etapas do processo da Figura NNN podem ser explicitadas como sendo composta por:  
+Em resumo, as etapas do processo da Figura NNN podem ser explicitadas como sendo compostas por:  
 1. **Importar** os dados de alguma fonte (Banco de dados, ou planilha) para o ambiente de ciência de dados;  
-2. **"Arrumar"** (no original, em inglês *tidy*) ou **pré-processar** os dados no formato de *dataframe* no ambiente de ciência de dados limpando os dados faltantes (*missing data*), campos digitados errados etc. Um dataframe, segundo Wickham e Grolemund (2017), é semelhante à estrutura de uma matriz, porém as suas colunas têm nomes e podem conter dados de tipos diferentes. O *dataframe* pode ser visto como uma tabela em que cada linha corresponde a um registo ou uma observação da tabela. Cada coluna corresponde às propriedades (campos ou variáveis) a serem armazenadas para cada registo da tabela.  
+2. **"Arrumar"** (no original, em inglês *tidy*) ou **organizar**/**pré-processar** os dados no formato de *dataframe* no ambiente de ciência de dados limpando os dados faltantes (*missing data*), campos digitados errados etc. Um *dataframe*, segundo Wickham e Grolemund (2017), são objetos de dados genéricos no ambiente de ciência de dados usados para armazenar dados tabulares. O *dataframe* pode ser visto como uma tabela em que cada linha corresponde a um registo ou uma observação e suas colunas têm nomes e podem conter diferentes tipos de dados. Em resumo, um *dataframe* é composto de três componentes principais: *dados,linhas e colunas*.  
 3. **Transformar** os dados, de forma que possam ser aplicadas as técnicas estatísticas. Em alguns casos, transformar os campos categóricos alfanuméricos (por exemplo sexo, ou faixa etária) em campos categóricos numéricos (exemplo: sexo feminino = 1, sexo masculino = 2, não respondeu = 3). Nesta fase também são desenvolvidos os códigos (programas) para a elaboração das análises.  
-4. **Visualização**. Nesta etapa são gerados os gráficos e elaborado o relatório da análise.  
-5. **Modelar**. Elaboração de modelos com os dados após a análise exploratória dos dados. Um modelo estatístico é uma representação da realidade na qual definimos a relação entre variáveis para entender e prever o comportamento de um fenômeno.  
+4. **Visualizar**. Nesta etapa são gerados os gráficos e elaborado o relatório da análise.  
+5. **Modelar**. Elaboração de modelos com os dados após a análise exploratória dos dados. Um *modelo estatístico* é uma representação da realidade na qual definimos a relação entre variáveis para entender e prever o comportamento de um fenômeno.  
 6. **Comunicar**. Envio ou submissão do relatório final com as análises realizadas e as conclusões obtidas.
 
-[^13]: Conforme definido em LEXICO, Dicionário Online de Português.
-    Porto: 7Graus, 2018.
-    Disponível em: <https://www.lexico.pt/iterativo/>.
-    Acesso em: 10/06/2022.
+[^14]: Conforme definido em LEXICO, Dicionário Online de Português. Porto: 7Graus, 2018. Disponível em: <https://www.lexico.pt/iterativo/>. Acesso em: 10/06/2022.
 
-[^14]: Conjunto de instruções que um programa de computador percorre e repete um significativo número de vezes até que sejam alcançadas as condições desejadas.
-    Conforme definido em OxFordLanguages, 2022, Oxford University Press.
-    Disponível em: <https://languages.oup.com/google-dictionary-pt/>.
-    Acesso em: 10 jun. 2022.
+[^15]: Conjunto de instruções que um programa de computador percorre e repete um significativo número de vezes até que sejam alcançadas as condições desejadas. Conforme definido em OxFordLanguages, 2022, Oxford University Press. Disponível em: <https://languages.oup.com/google-dictionary-pt/>. Acesso em: 10 jun. 2022.  
 
-#### 4.2.3 Análise exploratória dos dados
+#### 4.2.3.1 Importação e preparação dos dados  
 
-Após o compartilhamento dos dados coletados pelos investigadores, houve necessidade de normalização e padronização dos mesmos, processo definido como limpeza e preparação de dados, uma das etapas do processo de mineração de dados (Hai, Kamber e Pei, 2011), correspondendo a etapa de "arrumar" da Figura NNN. Ainda na etapa inicial de pré-processamento dos dados brutos e com o objetivo de seguir os objetivos e fundamentar com a análise dos dados a resposta à pergunta de pesquisa desta tese, alguns campos das planilhas originais foram selecionados, logo, não foram utilizadas todas as colunas, ou variáveis, dos trabalhos selecionados do Quadro nnn.  
-Assim, para esta investigação foram selecionados os campos: nome do pesquisador, país onde foi aplicado o questionário, gênero e idade do respondente e o estilo de uso do espaço virtual, variáveis estas que foram considerados relevantes para análise e interpretação.  
-No Quadro yyy é possível visualizar o dicionário de dados com os nomes e as definições das variáveis utilizadas na Análise Exploratória de Dados (AED) desta tese.
-Um glossário ou dicionário de dados, de acordo com Askham (2022), são utilizados para armazenar um conjunto limitado de metadados[^15] concentrados nos nomes e definições relacionadas aos dados físicos e objetos relacionados.
-  
-De acordo com Silva, Peres e Boscarioli (2016) a AED compreende, em conceitos estatísticos a análise descritiva, uma ferramenta capaz de descrever ou resumir dados, mostrando aspectos importantes do conjunto de dados (*datasets* em inglês) como o tipo de distribuição associada aos valores mais representativos do conjunto, e permitindo criar visualizações referentes à tais aspectos.
-De forma geral, a análise exploratória é uma abordagem à análise de conjuntos de dados de modo a resumir suas características principais, frequentemente com métodos visuais.
-Um modelo estatístico pode ou não ser usado, mas primariamente a AED tem como objetivo observar o que os dados podem nos dizer além da modelagem formal ou do processo de teste de hipóteses.
+Após o compartilhamento dos dados coletados pelos investigadores, houve necessidade de normalização e padronização dos mesmos para uso nas análises realizadas nesta tese. Tal processo é definido como limpeza, preparação e tratamento de dados, uma das etapas do processo de mineração de dados (Hai, Kamber e Pei, 2011), correspondendo a fase de pré-processamento (ou *arrumar*) da Figura NNN. Ainda na etapa inicial de pré-processamento dos dados brutos e com a finalidade de atingir os objetivos propostos e fundamentar, com a análise dos dados compartilhados, a resposta à pergunta de pesquisa desta tese, algumas colunas das planilhas originais foram selecionadas, logo, não foram utilizadas todas as variáveis (ou colunas), dos trabalhos apurados do Quadro nnn.  
+Assim, para esta investigação foram escolhidos os campos: nome do pesquisador; país onde foi aplicado o questionário; gênero e idade do respondente; e o estilo de uso do espaço virtual; variáveis estas que foram considerados relevantes para análise e interpretação.  
+De acordo com Wickham (2014), 80% do processo de análise de dados é consumido no processo de limpeza e preparação dos dados. Segundo o autor, a preparação de dados não é apenas uma primeira etapa, mas deve ser repetida muitas vezes ao longo da análise, à medida que novos problemas surgem ou novos dados são coletados e acrescentados. Apesar da quantidade de tempo que leva, ainda existem poucos trabalhos de pesquisa sobre como limpar bem os dados, processo também definido como *higienização* (da SILVA, 2021). 
+Parte do desafio é a amplitude de atividades que a higienização de dados engloba atividades, tais como: verificação de valores discrepantes; análise das datas informadas; atribuição de valores ausentes; dentre outras define da Silva (2021). 
+Para lidar com tal dificuldade, esta tese se concentrou, primeiramente em um aspecto importante da limpeza de dados, organizando os dados compartilhados e estruturando o conjunto de dados para facilitar a posterior análise.  
+Para tanto, a pesquisadora utilizou-se do apoio oferecido pelos recursos humanos e técnicos do Laboratório de Inteligência de Dados – LinDa, grupo multidisciplinar de pesquisa da UNESP-Bauru que tem como finalidade apoiar e desenvolver pesquisas relacionadas à “ciência de dados” e, em particular, estudar estruturas de dados e suas aplicações onde seja possível extrair "inteligência".  
+Inicialmente, os dados recebidos foram compilados pela pesquisadora em um *workbook* utilizando o aplicativo de computador (software) Excel® da Microsoft®, constituído de diferentes tabelas formadas com todas as colunas e linhas das planilhas originais (*worksheets*) compartilhadas. Uma amostra do conteúdo das planilhas de trabalho em Excel® com os dados brutos, ou *dados não numericamente organizados*, é mostrada na Figura zzz.  
 
-[^15]: Metadados, ou Metainformação, são dados sobre outros dados.
-    Um item de um metadado pode dizer do que se trata aquele dado, geralmente uma informação inteligível por um computador.
-    Os metadados facilitam o entendimento dos relacionamentos e a utilidade das informações dos dados.
-    METADADOS (2022).
+![Figura ZZZa. Dados não numericamente organizados.](figura-aed2.png)
+![Figura ZZZb. Dados não numericamente organizados.](figura-aed3.png)
+![Figura ZZZc. Dados não numericamente organizados.](figura-aed4.png)
+![Figura ZZZd. Dados não numericamente organizados.](figura-aed5.png)
+
+Fonte: Elaborado pela pesquisadora (2022).
+
+Como pode ser observado na Figura zzz, algumas tabelas recebidas continham os dados primários recolhidos nas pesquisas diretamente dos questionários CEUEVE aplicados, outros foram enviados com dados faltantes e outros já pré-processados com a decodificação dos estilos de uso.
+A próxima etapa do processo se consistiu na preparação dos dados recebidos, ainda utilizando os recursos do software Excel®. Segundo Wickham (2014), a preparação de dados é o processo de reunir, combinar, estruturar e organizar os dados brutos para que possam ser usados nos procedimentos de AED e também para os processos de visualização desses dados. Os componentes da preparação de dados incluem, de acordo com Silva (2021): o pré-processamento de dados; documentação dos procedimentos utilizados; criação dos dicionários de dados; limpeza; validação e transformação; e envolve também buscar nas fontes externas originais dos dados a complementação dos dados faltantes (missing data). 
+Para finalizar esta etapa, em algumas das investigações recebidas a pesquisadora retornou o contato com os pesquisadores dos trabalhos selecionados para solicitar o envio dos dados faltantes bem como orientação e apoio no preenchimento desses campos, uma tarefa manual e criteriosa que demandou várias semanas.
+Após esta etapa inicial, os dados compartilhados foram compilados e geraram uma versão de trabalho do conjunto de dados em formato Excel®. Uma amostra do *dataset* pode ser visualizada na Figura aaa.
+
+![Figura aaa. Amostra do dataset inicial de trabalho.](figura-aed6.png)
+
+Fonte: Elaborado pela pesquisadora (2022).
+
+
+#### 4.2.3.2 Tratamento dos dados  
+
+Segundo da Silva (2021), um dos principais objetivos da preparação de dados é garantir que os dados brutos que estão sendo preparados para processamento e análise sejam precisos e consistentes para que os resultados dos aplicativos de análise sejam válidos.  
+Como visto na Figura zzz, os dados geralmente são criados com valores ausentes, imprecisões ou outros erros, e conjuntos de dados separados geralmente têm formatos diferentes que precisam ser reconciliados quando combinados. Corrigir erros de dados, validar a qualidade dos dados e consolidar conjuntos de dados são grandes partes dos projetos de preparação de dados, afirma Wickham (2014).  
+Após a fase inicial de preparação de dados, a próxima etapa envolve encontrar dados relevantes para garantir que os aplicativos de análise forneçam informações significativas e insights acionáveis para a tomada de decisões. 
+Os dados nesta nova geralmente são enriquecidos e otimizados para torná-los mais informativos e úteis - por exemplo, combinando conjuntos de dados internos e externos -, criando novos campos de dados, eliminando valores discrepantes e abordando conjuntos de dados desequilibrados que podem distorcer os resultados da análise. Esta fase, de acordo com Wickham (2014), da Silva (2021) e Askham (2022), pode ser definida como **tratamento dos dados**. 
+Portanto, na fase de tratamento, os dados são estruturados e organizados para estar de acordo com os requisitos da **Análise Exploratória de Dados (AED)**. Além de serem estruturados, afirma da Silva (2021), os dados normalmente devem ser transformados em um formato padronizado e utilizável, como por exemplo, a criação de novas variáveis ou colunas que agreguem valores das existentes. O *enriquecimento de dados*, por outro lado, aprimora e otimiza os *datasets* conforme necessário, por meio de medidas como aumentar e adicionar dados, define Askham (2022).  
+Datasets são definidos por Wickham e Grolemund (2017) como grupos de dados relacionados compostos por uma ou mais tabelas, mas que podem ser manipuladas como uma unidade por um computador.  
+Na etapa de tratamento, rotinas automatizadas desenvolvidas em um ambiente de desenvolvimento integrado são executadas nos dados para transformar, organizar e estruturar e validar sua consistência, integridade e precisão (Wickham , 2014). Os dados assim preparados são então armazenados em um repositório e usados diretamente para a AED ou então disponibilizados para que outros usuários possam também utilizá-los.
+Para a realização das etapas de preparação, transformação, organização e estruturação serão utilizados nesta tese os recursos da Linguagem R, um software livre de programação voltada ao tratamento, análise e visualização de dados. A linguagem é largamente utilizada por acadêmicos, estatísticos e analistas de dados para realizar projetos de AED. Foi criada originalmente no departamento de Estatística da Universidade de Auckland, Nova Zelândia e sua manutenção é realizada por uma comunidade de colaboradores voluntários que contribuem para melhoria e otimização da linguagem e com a expansão das suas funcionalidades básicas por meio de bibliotecas, ou packages residentes no repositório CRAN-R (The Comprehensive R Archive Network) (LINGUAGEM R, 2022)[^16].  
+Com o objetivo de facilitar e agilizar o processo de desenvolvimento na linguagem R dos cálculos estatísticos e geração de gráficos apresentados nesta tese, utilizou-se também o Ambiente de Desenvolvimento Integrado (do inglês Integrated Development Environment – IDE) RStudio, um programa de computador de fonte aberta com características e ferramentas de apoio ao desenvolvimento acelerado de software (LINGUAGEM R, 2022).  
+Portanto, como tarefa inicial para a organização e estruturação dos dados, no Quadro yyy é possível visualizar o dicionário de dados com os nomes e as definições das variáveis utilizadas na AED desta tese.  
+Um glossário ou dicionário de dados, de acordo com Askham (2022), é utilizado para armazenar um conjunto limitado de metadados[^17] concentrados nos nomes e definições relacionadas aos dados físicos e objetos relacionados.    
+
+[^16]: <https://cran.r-project.org/>. 
+
+[^17]: Metadados, ou Metainformação, são dados sobre outros dados. Um item de um metadado pode dizer do que se trata aquele dado, geralmente uma informação inteligível por um computador. Os metadados facilitam o entendimento dos relacionamentos e a utilidade das informações dos dados. METADADOS (2022).
 
 Quadro yyy: Dicionário de dados
 
@@ -355,18 +379,66 @@ Quadro yyy: Dicionário de dados
 |:------------|:-----------:|:---------------------|:------------------------|
 | pesquisador      |      texto       |                                                                                                                                                                                                                                                                          | Nome do(s) pesquisador(es) responsável(is) pela pesquisa    |
 | data.ano         |       data       | dd/mm/aaaa                                                                                                                                                                                                                                                               | Dia, mês e ano em que o questionário foi aplicado           |
-| país             |      texto       | Brasil, Espanha, México e Portugal                                                                                                                                                                                                                                       | Países onde o questionário CEUEV foi aplicado                 |
-| genero           |      texto       | Feminino Masculino NR                                                                                                                                                                                                                                                    | Gênero do inquirido                                         |
+| pais             |      texto       | Brasil, Espanha, México ou Portugal                                                                                                                                                                                                                                       | Países onde o questionário CEUEV foi aplicado                 |
+| genero           |      texto       | Feminino, Masculino ou NR                                                                                                                                                                                                                                                 | Gênero do inquirido                                         |
 | idade            |      texto       | de 11 a 14 anos, de 14 a 17 anos, de 17 a 20 anos, de 20 a 30 anos, de 30 a 40 anos, de 40 a 50 anos, de 50 a 60 anos, de 60 a 70 anos, acima de 70 anos. | Faixa etária dos respondentes                               |
 | estilo           |      texto       | **Estilo de Uso A**:Uso Participativo no Espaço Virtual; **Estilo de Uso B**:Busca e Pesquisa no Espaço Virtual; **Estilo de Uso C**:Estruturação e Planejamento no Espaço Virtual; **Estilo de Uso D**:Ação Concreta e Produção no Espaço Virtual; **Não Identificado** | Estilos de uso do espaço virtual definidos em BARROS (2013) |
 
 Fonte: Elaborado pela pesquisadora (2022).
 
+De acordo com Silva, Peres e Boscarioli (2016) a AED compreende, em conceitos estatísticos a análise descritiva, uma ferramenta capaz de descrever ou resumir dados, mostrando aspectos importantes do conjunto de dados como o tipo de distribuição associada aos valores mais representativos do conjunto, e permitindo criar visualizações referentes à tais aspectos.   
+De forma geral, a análise exploratória é uma abordagem à análise de conjuntos de dados de modo a resumir suas características principais, frequentemente com métodos visuais. Um modelo estatístico pode ou não ser usado, mas primariamente a AED tem como objetivo observar o que os dados podem nos dizer além da modelagem formal ou do processo de teste de hipóteses (WICKHAM e GROLEMUND, 2017).  
+
+#### 4.2.3.3 Transformação dos dados  
+
+```{r transformacao_dados}
+# - ETAPA INICIAL
+# --- Importação e preparação dos dados
+# setwd("~/Downloads/Tese Priscilla/r-codes") # versão inicial em 30/04/2022.
+# versão atual do projeto intitulado "espaco-virtual-e-geracoes" no GitHub
+setwd("/Users/jpalbino/Library/Mobile Documents/com~apple~CloudDocs/GitHub/espaco-virtual-e-geracoes")
+
+library(readxl)
+dbf <- read_excel("dados/dados_transformados/dados brutos formatados.xlsx")
+
+string_idade <- c(14, 17,20,30,40,50,60,70,80)
+names(string_idade) <- c("de 11 a 14 anos.", "de 14 a 17 anos.", "de 17 a 20 anos.",
+                         "de 20 a 30 anos.", "de 30 a 40 anos.", "de 40 a 50 anos.",
+                         "de 50 a 60 anos.", "de 60 a 70 anos.", "acima de 70 anos.")
+
+for (i in 1:nrow(dbf)) {
+  if (!is.na(as.numeric(dbf$idade[i]))) {
+    for (j in 1:length(string_idade)) {
+      if (as.numeric(dbf$idade[i]) < string_idade[[j]]) {
+        dbf$idade[i] <- names(string_idade[j])
+        break
+      }
+    }
+  }
+}
+  
+library(writexl)
+write_xlsx(
+  dbf,
+  path ="dados/dados_transformados/dados_brutos_transformados.xlsx",
+  col_names = TRUE,
+  format_headers = TRUE,
+  use_zip64 = FALSE
+)
+# ------
+# para a segunda etapa
+library(readxl)
+dbf02 <- read_excel("dados/dados_transformados/dados_brutos_transformados.xlsx", sheet = "Sheet1", col_names = FALSE)
+# limpando
+dbf02$faixa = dbf02$...1
+dbf02$...1 = NULL
+```
+
 ```{r dados_transformados}
 #data("./dados/dados_minerados.csv")
 euevgera <- read.table("./dados/dados_minerados.csv", header = TRUE, sep = ";", as.is=FALSE)
 ```
-Os dados recebidos foram referentes a quatro países, Brasil, Espanha, México e Portugal, totalizando **`r nrow(euevgera)`** observações, conforme pode-se visualizar no Gráfico 1.
+Os dados recebidos são referentes a quatro países, Brasil, Espanha, México e Portugal, totalizando **`r nrow(euevgera)`** observações, conforme pode-se visualizar no Gráfico 1.
 
 ```{r grafico_1, echo=FALSE}
 # Gráfico 1: Quantidade de casos por país
@@ -390,7 +462,7 @@ text(x = graph.pais, y = soma_pais_grafico, label = unname(soma_pais_grafico), c
 axis(1, at=graph.pais, labels=paste("(",pct_pais,")"), tick=F, las=1, line=-1, cex=0.5)
 ```
 
-Observa-se, portanto, no Gráfico 1, uma desigualdade referente a quantidade de dados recebidos de cada país, percebendo então que o Brasil foi o país com mais casos coletados `r soma_pais_grafico[[1]]` ou `r pct_pais[[1]]`.
+Observa-se, no Gráfico 1, uma desigualdade referente a quantidade de dados recebidos de cada país, percebendo então que o Brasil foi o país com mais casos coletados `r soma_pais_grafico[[1]]` ou `r pct_pais[[1]]`.
 Então considerou essa amostra de dados uma amostra com valores discrepantes pois as quantidades numéricas se diferem consideravelmente entre os países.
 
 ## Referências Bibliográficas
@@ -400,6 +472,17 @@ Barrera, A. V. Herramienta para la creación de un Entorno Personal de Aprendiza
 Ota, M. A. Adaptatividade em Ambientes Virtuais: uma proposta para personalizar a aprendizagem em cursos híbridos de ensino superior. 2018. 268 p. Tese (Doutorado em Ensino de Ciências e Matemática) - Universidade Cruzeiro do Sul, São Paulo, 2018.  
 Terçariol, A. A.de L., Barros, D. M. V. (2017). Os estilos de uso dos espaços virtuais e as redes sociais na pedagogia: um estudo exploratório.Revista De Estilos De Aprendizaje, 10(20). <https://doi.org/10.55777/rea.v10i20.1067> 
 Sánchez Romero, C.et al.(2020).Estudio de Identificación de Los Estilos Del Uso Del Virtual de Los Seniors: perspectivas iniciales, 14(2), 136--163.
+WICKHAM, H. Tidy Data. Journal of Statistical Software, [S. l.], v. 59, n. 10, p. 1–23, 2014. DOI: 10.18637/jss.v059.i10. Disponível em: https://www.jstatsoft.org/index.php/jss/article/view/v059i10. Acesso em: 26 jul. 2022. 
+da SILVA, D. Higienização de dados: o que é e 7 boas práticas para realizá-la. Blog da Zendesk, 11 ago 2021. Disponível em: <https://www.zendesk.com.br/blog/higienizacao-de-dados/>. Acesso em: 26 jun. 2022. 
+LINGUAGEM R. In: WIKIPÉDIA, a enciclopédia livre. Flórida: Wikimedia Foundation, 2022. Disponível em: <https://pt.wikipedia.org/w/index.php?title=R_(linguagem_de_programa%C3%A7%C3%A3o)&oldid=63783140>. Acesso em: 13 jun. 2022.
+ASKHAM. N. Data Glossary or Data Dictionary? The Data Governance Coach. 14 nov. 2017. Disponível em: https://www.nicolaaskham.com/blog/2017/11/8/what-is-a-data-glossary-and-how-is-it-different-from-a-data-dictionary. Acesso em 08 mai. 2022.
+BARROS, D. M. V. Diseño y aplicación del Cuestionario Estilo de Uso Espacio Virtual (CEUEV). In CUE, J. L. G, Estilos de aprendizaje y otras perspectivas pedagógicas del siglo XXI. México: Colegio de Postgraduados, 2013. P 149-164.
+HAN, J.; KAMBER, M.; PEI, J. (2011). Data Mining: Concepts and Techniques (3rd ed.). Morgan Kaufmann. ISBN 978-0-12-381479-1.
+KOTU, V. Data Science: Concepts and Practice. Cambridge: Morgan Kaufmann, 2019.
+METADADOS. In: WIKIPÉDIA, a enciclopédia livre. Flórida: Wikimedia Foundation, 2022. Disponível em: <https://pt.wikipedia.org/w/index.php?title=Metadados&oldid=63544067>. Acesso em: 08 mai. 2022.
+SILVA, Leandro Augusto da, PERES, Sarajane Marques, BOSCARIOLI, Clodis. Introdução à Mineração de Dados com Aplicações em R. Rio de Janeiro: Elsevier, 2016. 
+TYAGI, Amit Kumar. Data Science and Data Analytics: Opportunities and Challenges. Flórida: CRC Press, 2022.
+WICKHAM, Hadley, GROLEMUND, Garret. R for Data Science: Imort, Tidy, Transform, Visualize and Model Data. Sebastopol: O'Relly Media, 2017.
 
 
 

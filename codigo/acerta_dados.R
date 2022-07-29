@@ -1,9 +1,16 @@
+# Tese: Estilos de Uso dos Espaços Virtuais de Aprendizagem: Diferentes Perfis e Formatos nas Gerações Digitais
+# Autora da tese:  Priscilla Aparecida Sanatana Bittencourt
+# Análise Exploratória para a Tese EUEV e Gerações
+# Autor: João Pedro Albino
+#
+# - ETAPA INICIAL
+# --- Importação e preparação dos dados
 # setwd("~/Downloads/Tese Priscilla/r-codes") # versão inicial em 30/04/2022.
-# versão atual em projeto intitulado "espaco-virtual-e-geracoes" no GitHub
+# versão atual do projeto intitulado "espaco-virtual-e-geracoes" no GitHub
 setwd("/Users/jpalbino/Library/Mobile Documents/com~apple~CloudDocs/GitHub/espaco-virtual-e-geracoes")
 
 library(readxl)
-dbf <- read_excel("dados/dados brutos formatados.xlsx")
+dbf <- read_excel("dados/dados_transformados/dados brutos formatados.xlsx")
 
 string_idade <- c(14, 17,20,30,40,50,60,70,80)
 names(string_idade) <- c("de 11 a 14 anos.", "de 14 a 17 anos.", "de 17 a 20 anos.",
@@ -24,7 +31,7 @@ for (i in 1:nrow(dbf)) {
 library(writexl)
 write_xlsx(
   dbf,
-  path ="dados/dados_brutos_transformados.xlsx",
+  path ="dados/dados_transformados/dados_brutos_transformados.xlsx",
   col_names = TRUE,
   format_headers = TRUE,
   use_zip64 = FALSE
@@ -34,13 +41,12 @@ write_xlsx(
 # ------
 # para a segunda etapa
 library(readxl)
-dbf02 <- read_excel("dados/dados_brutos_transformados.xlsx", 
-                      +     sheet = "trabalho", col_names = FALSE)
+dbf02 <- read_excel("dados/dados_transformados/dados_brutos_transformados.xlsx", sheet = "Sheet1", col_names = FALSE)
 # limpando
 dbf02$faixa = dbf02$...1
 dbf02$...1 = NULL
 
-#define function to calculate mode
+#definir função para calcular a moda
 #source: https://www.statology.org/mode-in-r/#:~:text=The%20statistical%20software%20R%20does%20not%20have%20a,show%20how%20to%20use%20this%20function%20in%20practice.
 find_mode <- function(x) {
   u <- unique(x)
@@ -51,7 +57,7 @@ find_mode <- function(x) {
 #find mode
 find_mode(dbf02$faixa)
 
-#Mode in R: How to Find Mode of Vectors
+#Modo em R: Como encontrar a moda de vetores
 #source: https://r-lang.com/mode-in-r/
 getmode <- function(v) {
   uniqv <- unique(v)
